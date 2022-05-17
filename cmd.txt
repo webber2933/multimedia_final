@@ -1,0 +1,8 @@
+path:
+C:\multimedia_final_project
+
+run baseline:
+python baseline1.py -p toadstool/toadstool/participants -i 0 -o ‪baseline_result
+
+run evaluate:
+python evaluate.py -i baseline_result/ -t GroundTruth/ -n 0
