@@ -6,3 +6,9 @@ python baseline1.py -p toadstool/toadstool/participants -i 0 -o ‪baseline_resu
 
 run evaluate:
 python evaluate.py -i baseline_result/ -t GroundTruth/ -n 0
+
+run event_detection:
+python event_detection.py -p toadstool/toadstool/participants -i 0 -o ‪my_result
+
+run replay_game_session:
+python replay_game_session.py -i ../participants/participant_9/participant_9_session.json -o ../participants/participant_9/gameframe
